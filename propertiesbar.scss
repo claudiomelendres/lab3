@@ -1,0 +1,59 @@
+.properties-bar__panel {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.51);
+  color:#FFF;
+  right: -450px;
+  top:0;
+  width: 450px;
+  min-height:100%;
+  transition: left 1s cubic-bezier(0.17, 0.04, 0.03, 0.94), box-shadow 500ms ease;
+  overflow: visible;
+  box-sizing: border-box;
+  outline: 1px solid #2a2a2a;
+  z-index:1;
+  height: 100%;
+}
+
+.properties-bar__panel--open{
+  right: 0;
+}
+
+.properties-bar__tab {
+  position: absolute;
+  z-index:5;
+  right: 451px;
+  width: 20px;
+  height: 200px;
+  border-radius: 15px 0 0 15px;
+  -moz-border-radius: 15px 0 0 15px;
+  -webkit-border-radius: 15px 0 0 15px;
+  border-bottom: 1px solid  #ffffff;
+  border-top: 1px solid  #ffffff;
+
+  -webkit-box-shadow: 0 2px 18px 0 rgba(0,0,0,0.66);
+  -moz-box-shadow: 0 2px 18px 0 rgba(0,0,0,0.66);
+  box-shadow: 0 2px 18px 0 rgba(0,0,0,0.66);
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+
+.properties-bar__tab--option{
+  background: #606060;
+  top: 500px;
+}
+
+.properties-bar__open--left{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.properties-bar__toggle{
+  display: none;
+}

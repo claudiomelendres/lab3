@@ -1,0 +1,19 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "sasslintConfig": "./.sass-lint.yml",
+  "description": "desc",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:sass": "sass-lint src/**/*.scss -c -v"
+  },
+  "author": "claudio",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "sass-lint": "^1.10.2"
+  }
+}
